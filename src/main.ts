@@ -49,3 +49,18 @@ if (isAdmin) {
 if (!isAdmin) {
     console.log("isAdmin ist false")
 }
+
+function christmasTree(n : number) : void {
+    for (let i : number = 1; i <= n; i++) {
+        let line : string = "";
+        for (let j : number = 1; j <= i*2-1; j++) {
+            line += "*";
+        }
+        console.log(line);
+    }
+    for (let x : number = 1; x <= n; x++) {
+        console.log("*");
+    }
+}
+
+christmasTree(5);
