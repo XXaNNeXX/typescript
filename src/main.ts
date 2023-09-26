@@ -64,3 +64,20 @@ function christmasTree(n : number) : void {
 }
 
 christmasTree(5);
+console.log("-------------------------------------")
+
+let myArray : number[] = [2,6,9,3,6,4,5,7]
+let myNewArray : number[] = myArray.map(element => element*2)
+console.log(myNewArray)
+
+let myArray2 : string[] = ["Hund", "Katze", "Meerschweinchen", "Hamster", "Schildkröte"]
+let myNewArray2 : string[] = myArray2.filter(element => element.length > 5)
+console.log(myNewArray2)
+
+let myArray3 : number[] = [2,6,9,3,6,4,5,7]
+let sum : number = myArray3.reduce((a,b) => a + b)
+console.log(sum)
+
+let myArray4 : number[] = [11,5,8,3,78,45,2]
+let bigger : boolean = myArray4.some(element => element > 10)
+console.log(bigger)
